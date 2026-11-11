@@ -1,0 +1,7 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <text>银登中心个贷不良包信息</text>
+  <view wx:for="{{packages}}" wx:key="id">
+    <text>{{item.title}}</text>
+  </view>
+</view>

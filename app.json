@@ -1,0 +1,10 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "银登个贷不良"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
