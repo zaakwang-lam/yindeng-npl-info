@@ -2,10 +2,13 @@
   <view class="card hero">
     <view class="kicker">收费说明</view>
     <view class="card-title">订阅档位</view>
-    <view class="card-sub">按钮可以点。现在不会扣款。</view>
+    <view class="card-sub">按钮可以点。现在不会扣款，只说明正式版怎么收。</view>
   </view>
-  <view class="card" wx:for="{{plans}}" wx:key="name">
-    <view class="plan-top"><text class="plan-name">{{item.name}}</text><text class="plan-price">{{item.price}}元/月</text></view>
+  <view class="card plan" wx:for="{{plans}}" wx:key="name">
+    <view class="plan-top">
+      <text class="plan-name">{{item.name}}</text>
+      <text class="plan-price">{{item.price}}<text class="yuan"> 元/月</text></text>
+    </view>
     <view class="card-sub">{{item.desc}}</view>
     <button class="btn plan-btn" data-name="{{item.name}}" bindtap="onChoose">选择{{item.name}}</button>
   </view>

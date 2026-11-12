@@ -1,6 +1,0 @@
-<!--pages/filter/filter.wxml-->
-<view class="container">
-  <text>筛选页骨架</text>
-  <!-- region, type, age, amount selectors -->
-  <button bindtap="applyFilter">应用筛选</button>
-</view>

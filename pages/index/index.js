@@ -7,14 +7,25 @@ Page({
     region: "全部",
     list: [],
   },
-  onLoad() { this.apply(); },
-  onKeyword(e) { this.setData({ keyword: e.detail.value }); },
-  onSearch() { this.apply(); },
+
+  onLoad() {
+    this.apply();
+  },
+
+  onKeyword(e) {
+    this.setData({ keyword: e.detail.value });
+  },
+
+  onSearch() {
+    this.apply();
+  },
+
   onRegion(e) {
     const region = e.currentTarget.dataset.region;
     this.setData({ region });
     this.apply(region, this.data.keyword);
   },
+
   apply(region, keyword) {
     const word = (keyword === undefined ? this.data.keyword : keyword || "").trim();
     const area = region || this.data.region;
@@ -25,9 +36,12 @@ Page({
     });
     this.setData({ list });
   },
+
   onOpen(e) {
-    wx.navigateTo({ url: "/pages/detail/detail?id=" + e.currentTarget.dataset.id });
+    const id = e.currentTarget.dataset.id;
+    wx.navigateTo({ url: "/pages/detail/detail?id=" + id });
   },
+
   goSubscribe() {
     wx.navigateTo({ url: "/pages/subscribe/subscribe" });
   },

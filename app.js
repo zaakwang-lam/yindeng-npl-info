@@ -1,7 +1,65 @@
-// app.js
 App({
-  onLaunch() {
-    console.log('Yindeng NPL Info launched');
+  globalData: {
+    notices: [
+      {
+        id: "855577016",
+        date: "2026-11-11",
+        title: "华夏银行深圳分行2026年第1期个人不良贷款（个人消费信用贷款）转让项目招商公告",
+        url: "https://www.yindeng.com.cn/ywzq/ywzq_bldkzr/bldkzr_zczszq/202611/t20261111_855577016.html",
+        region: "深圳",
+        assetType: "消费贷",
+        demo: false,
+      },
+      {
+        id: "855577015",
+        date: "2026-11-11",
+        title: "华夏银行重庆分行个人贷款债权转让招商公告",
+        url: "https://www.yindeng.com.cn/ywzq/ywzq_bldkzr/bldkzr_zczszq/202611/t20261111_855577015.html",
+        region: "重庆",
+        assetType: "个人贷款",
+        demo: false,
+      },
+      {
+        id: "855576381",
+        date: "2026-11-11",
+        title: "建行宁波市分行关于2026年第7期个人不良贷款（个人消费及经营性贷款）批量转让项目招商公告",
+        url: "https://www.yindeng.com.cn/ywzq/ywzq_bldkzr/bldkzr_zczszq/202611/t20261111_855576381.html",
+        region: "宁波",
+        assetType: "消费及经营",
+        demo: false,
+      },
+      {
+        id: "855575965",
+        date: "2026-11-11",
+        title: "甘肃农村商业银行股份有限公司关于2026年第32期个人不良贷款转让项目",
+        url: "https://www.yindeng.com.cn/ywzq/ywzq_bldkzr/bldkzr_zczszq/202611/t20261111_855575965.html",
+        region: "甘肃",
+        assetType: "消费及经营",
+        demo: false,
+      },
+      {
+        id: "855575949",
+        date: "2026-11-11",
+        title: "平安消费金融有限公司2026年第4期个人不良贷款批量转让项目招商公告",
+        url: "https://www.yindeng.com.cn/ywzq/ywzq_bldkzr/bldkzr_zczszq/202611/t20261111_855575949.html",
+        region: "全国",
+        assetType: "消费金融",
+        demo: false,
+      },
+      {
+        id: "demo-a",
+        date: "演示",
+        title: "演示包 A · 消费信用贷（数字是编的）",
+        url: "",
+        region: "广东",
+        assetType: "消费贷",
+        demo: true,
+        principalYi: "6.4",
+        interestYi: "4.1",
+        count: "186400",
+        overdueDays: "2400",
+        note: "用来看字段长什么样，不能拿去报价。",
+      },
+    ],
   },
-  globalData: {}
-})
+});

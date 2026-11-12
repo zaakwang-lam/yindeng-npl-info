@@ -1,9 +1,14 @@
 <view class="page" wx:if="{{item}}">
   <view class="card">
-    <view class="tags"><text class="tag">{{item.region}}</text><text class="tag">{{item.assetType}}</text><text class="tag demo" wx:if="{{item.demo}}">演示数据</text></view>
+    <view class="tags">
+      <text class="tag">{{item.region}}</text>
+      <text class="tag">{{item.assetType}}</text>
+      <text class="tag demo" wx:if="{{item.demo}}">演示数据</text>
+    </view>
     <view class="card-title">{{item.title}}</view>
     <view class="card-sub">{{item.date}}</view>
   </view>
+
   <view class="card" wx:if="{{item.demo}}">
     <view class="card-title">字段示意</view>
     <view class="row"><text>未偿本金</text><text>{{item.principalYi}} 亿</text></view>
@@ -12,9 +17,11 @@
     <view class="row"><text>加权逾期</text><text>{{item.overdueDays}} 天</text></view>
     <view class="note">{{item.note}}</view>
   </view>
+
   <view class="card" wx:else>
     <view class="card-title">原文</view>
     <view class="card-sub">未偿本金、利息、笔数在公告 PDF 里。这页只保留公开标题，不补数字。</view>
   </view>
+
   <button class="btn" bindtap="onCopy">复制标题和链接</button>
 </view>

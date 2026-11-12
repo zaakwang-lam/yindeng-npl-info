@@ -1,17 +1,104 @@
-.hero { background: #1a2332; }
-.hero .card-title { color: #ffffff; }
-.kicker { font-size: 22rpx; letter-spacing: 4rpx; color: #c4a35a; margin-bottom: 8rpx; }
-.hero .card-sub { color: #c9d0d8; }
-.hero-btn { margin-top: 24rpx; background: #c4a35a; color: #1a2332; }
-.label { font-size: 24rpx; color: #6b7280; margin-bottom: 10rpx; }
-.input { background: #f7f8fa; border: 1rpx solid #e6e8eb; border-radius: 12rpx; height: 88rpx; padding: 0 24rpx; font-size: 30rpx; color: #1a2332; }
-.ph { color: #9ca3af; }
-.search { margin-top: 16rpx; }
-.chips { margin-top: 20rpx; white-space: nowrap; height: 72rpx; }
-.chip { display: inline-block; margin-right: 12rpx; padding: 0 22rpx; height: 64rpx; line-height: 64rpx; border-radius: 999rpx; background: #f3f5f7; color: #1a2332; font-size: 24rpx; }
-.chip.on { background: #1a365d; color: #ffffff; }
-.tags { margin-bottom: 12rpx; }
-.tag { display: inline-block; margin-right: 8rpx; padding: 4rpx 12rpx; border-radius: 8rpx; background: #eef2f6; color: #1a365d; font-size: 22rpx; }
-.tag.demo { background: #fef3c7; color: #92400e; }
-.item-title { font-size: 30rpx; font-weight: 600; line-height: 1.45; }
-.item-btn, .empty .btn { margin-top: 20rpx; }
+.hero {
+  background: #1a2332;
+}
+
+.hero .card-title {
+  color: #ffffff;
+}
+
+.kicker {
+  font-size: 22rpx;
+  letter-spacing: 4rpx;
+  color: #c4a35a;
+  margin-bottom: 8rpx;
+}
+
+.hero .card-sub {
+  color: #c9d0d8;
+}
+
+.hero-btn {
+  margin-top: 24rpx;
+  background: #c4a35a;
+  color: #1a2332;
+}
+
+.label {
+  font-size: 24rpx;
+  color: #6b7280;
+  margin-bottom: 10rpx;
+}
+
+.input {
+  background: #f7f8fa;
+  border: 1rpx solid #e6e8eb;
+  border-radius: 12rpx;
+  height: 88rpx;
+  padding: 0 24rpx;
+  font-size: 30rpx;
+  color: #1a2332;
+}
+
+.ph {
+  color: #9ca3af;
+}
+
+.search {
+  margin-top: 16rpx;
+}
+
+.chips {
+  margin-top: 20rpx;
+  white-space: nowrap;
+  height: 72rpx;
+}
+
+.chip {
+  display: inline-block;
+  margin-right: 12rpx;
+  padding: 0 22rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  border-radius: 999rpx;
+  background: #f3f5f7;
+  color: #1a2332;
+  font-size: 24rpx;
+}
+
+.chip.on {
+  background: #1a365d;
+  color: #ffffff;
+}
+
+.tags {
+  margin-bottom: 12rpx;
+}
+
+.tag {
+  display: inline-block;
+  margin-right: 8rpx;
+  padding: 4rpx 12rpx;
+  border-radius: 8rpx;
+  background: #eef2f6;
+  color: #1a365d;
+  font-size: 22rpx;
+}
+
+.tag.demo {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.item-title {
+  font-size: 30rpx;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.item-btn {
+  margin-top: 20rpx;
+}
+
+.empty .btn {
+  margin-top: 20rpx;
+}

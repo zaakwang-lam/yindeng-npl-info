@@ -1,12 +1,10 @@
 {
-  "description": "Yindeng NPL Info Mini Program",
-  "packOptions": {
-    "ignore": []
-  },
+  "description": "银登中心个贷不良包信息工具",
+  "packOptions": { "ignore": [], "include": [] },
   "setting": {
     "bundle": false,
     "userConfirmedBundleSwitch": false,
-    "urlCheck": true,
+    "urlCheck": false,
     "scopeDataCheck": false,
     "coverView": true,
     "es6": true,
@@ -27,11 +25,12 @@
     "useApiHostProcess": true,
     "showShadowRootInWxmlPanel": true,
     "packNpmManually": false,
-    "enableEngineNative": false,
     "packNpmRelationList": [],
     "minifyWXSS": true,
-    "showES6CompileOption": false,
+    "disableUseStrict": false,
     "minifyWXML": true,
+    "showES6CompileOption": false,
+    "checkInvalidKey": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
@@ -40,7 +39,7 @@
   },
   "compileType": "miniprogram",
   "libVersion": "3.5.5",
-  "appid": "",
+  "appid": "touristappid",
   "projectname": "yindeng-npl-info",
   "condition": {}
 }
