@@ -1,15 +1,10 @@
-# 银登中心个贷不良包信息工具 (Yindeng NPL Info)
+# 银登中心个贷不良包信息工具
 
-微信小程序：聚合银登中心个贷不良资产包挂牌信息，提供筛选、提醒、关键指标展示，方便同行快速查看。
+微信小程序骨架 + 公开公告抓取脚本。
 
-## 功能规划
-- 最新挂牌列表
-- 关键字段提取（未偿本息、逾期天数、笔数、地区等）
-- 筛选：地区、类型（信用卡/消费贷）、账龄
-- 付费提醒与导出
+- 产品说明：[docs/PRD.md](docs/PRD.md)
+- 抓取：[scraper/README.md](scraper/README.md)
+- 支付：[docs/payment.md](docs/payment.md)
+- 获客文案：[docs/marketing.md](docs/marketing.md)
 
-## 技术栈
-- 微信小程序
-- 后端数据抓取（Python 或云函数）
-
-详见 docs/PRD.md
+列表页只保证标题和链接。未偿本息等字段从公告 PDF 抽，抽不到就留空。
