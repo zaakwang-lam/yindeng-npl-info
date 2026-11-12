@@ -1,9 +1,16 @@
-// pages/detail/detail.js
+const app = getApp();
 Page({
-  data: {
-    package: {}
+  data: { item: null },
+  onLoad(query) {
+    const item = app.globalData.notices.find((row) => row.id === query.id) || null;
+    this.setData({ item });
   },
-  onLoad(options) {
-    // TODO: load by id from API
-  }
-})
+  onCopy() {
+    const item = this.data.item;
+    if (!item || !item.url) {
+      wx.showToast({ title: "演示包没有原文链接", icon: "none" });
+      return;
+    }
+    wx.setClipboardData({ data: item.title + "\n" + item.url });
+  },
+});

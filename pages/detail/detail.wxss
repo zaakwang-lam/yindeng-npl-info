@@ -1,1 +1,6 @@
-.container { padding: 20rpx; }
+.tags { margin-bottom: 12rpx; }
+.tag { display: inline-block; margin-right: 8rpx; padding: 4rpx 12rpx; border-radius: 8rpx; background: #eef2f6; color: #1a365d; font-size: 22rpx; }
+.tag.demo { background: #fef3c7; color: #92400e; }
+.row { display: flex; justify-content: space-between; padding: 18rpx 0; border-bottom: 1rpx solid #eef0f3; font-size: 28rpx; }
+.note { margin-top: 16rpx; color: #92400e; font-size: 24rpx; }
+.btn { margin-top: 8rpx; }

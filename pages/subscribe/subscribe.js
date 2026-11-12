@@ -1,13 +1,19 @@
-// pages/subscribe/subscribe.js
 Page({
   data: {
     plans: [
-      { id: 1, name: '基础提醒', price: 29 },
-      { id: 2, name: '高级筛选+导出', price: 69 },
-      { id: 3, name: '全功能', price: 99 }
-    ]
+      { name: "免费", price: "0", desc: "浏览公开标题，打开详情" },
+      { name: "提醒", price: "29", desc: "按关键词留下筛选条件" },
+      { name: "专业", price: "69", desc: "导出标题列表" },
+      { name: "全功能", price: "99", desc: "提醒加导出" }
+    ],
   },
-  buy(e) {
-    // TODO: virtual payment
-  }
-})
+  onChoose(e) {
+    wx.showModal({
+      title: "开发预览",
+      content: e.currentTarget.dataset.name + "档还没接微信支付。先用界面给同行看。",
+      showCancel: false,
+      confirmText: "知道了",
+      confirmColor: "#1A365D",
+    });
+  },
+});

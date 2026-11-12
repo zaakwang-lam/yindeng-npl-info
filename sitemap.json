@@ -1,0 +1,4 @@
+{
+  "desc": "银登个贷不良包信息",
+  "rules": [{ "action": "allow", "page": "*" }]
+}

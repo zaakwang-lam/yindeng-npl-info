@@ -2,11 +2,14 @@
   "pages": [
     "pages/index/index",
     "pages/detail/detail",
-    "pages/filter/filter",
     "pages/subscribe/subscribe"
   ],
   "window": {
-    "navigationBarTitleText": "银登个贷不良"
+    "navigationBarBackgroundColor": "#1A2332",
+    "navigationBarTitleText": "银登个贷不良",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#F3F5F7",
+    "backgroundTextStyle": "dark"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

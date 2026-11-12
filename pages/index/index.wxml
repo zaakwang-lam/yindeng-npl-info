@@ -1,7 +1,30 @@
-<!--pages/index/index.wxml-->
-<view class="container">
-  <text>银登中心个贷不良包信息</text>
-  <view wx:for="{{packages}}" wx:key="id">
-    <text>{{item.title}}</text>
+<view class="page">
+  <view class="hero card">
+    <view class="kicker">公开信息</view>
+    <view class="card-title">银登个贷不良</view>
+    <view class="card-sub">先看标题和原文。未偿本息以公告 PDF 为准，这里不编数字。</view>
+    <button class="btn hero-btn" bindtap="goSubscribe">订阅档位</button>
+  </view>
+  <view class="card">
+    <view class="label">标题关键词</view>
+    <input class="input" placeholder="消费、信用卡、广州" placeholder-class="ph" value="{{keyword}}" bindinput="onKeyword" confirm-type="search" bindconfirm="onSearch" />
+    <button class="btn search" bindtap="onSearch">筛选</button>
+    <scroll-view scroll-x class="chips" enable-flex>
+      <view class="chip {{region === item ? 'on' : ''}}" wx:for="{{regions}}" wx:key="*this" data-region="{{item}}" bindtap="onRegion">{{item}}</view>
+    </scroll-view>
+  </view>
+  <view class="card item" wx:for="{{list}}" wx:key="id">
+    <view class="tags">
+      <text class="tag">{{item.region}}</text>
+      <text class="tag">{{item.assetType}}</text>
+      <text class="tag demo" wx:if="{{item.demo}}">演示</text>
+    </view>
+    <view class="item-title">{{item.title}}</view>
+    <view class="card-sub">{{item.date}}</view>
+    <button class="btn item-btn" data-id="{{item.id}}" bindtap="onOpen">查看</button>
+  </view>
+  <view class="card empty" wx:if="{{list.length === 0}}">
+    <view class="card-title">没有命中</view>
+    <button class="btn" data-region="全部" bindtap="onRegion">看全部</button>
   </view>
 </view>
