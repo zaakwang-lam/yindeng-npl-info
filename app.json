@@ -1,6 +1,9 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/filter/filter",
+    "pages/subscribe/subscribe"
   ],
   "window": {
     "navigationBarTitleText": "银登个贷不良"

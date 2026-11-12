@@ -1,0 +1,7 @@
+<!--pages/detail/detail.wxml-->
+<view class="container">
+  <text>详情页骨架</text>
+  <view>项目名称：{{package.title}}</view>
+  <view>未偿本息：{{package.total}}</view>
+  <!-- more fields -->
+</view>
